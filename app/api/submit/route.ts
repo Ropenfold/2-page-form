@@ -5,8 +5,6 @@ export async function POST(req: NextRequest) {
     const formData = await req.formData();
     const data = Object.fromEntries(formData);
 
-    console.log('Recieved form data:', data);
-
     const paramaters = new URLSearchParams(
       Object.fromEntries(
         Object.entries(data).map(([key, value]) => [key, String(value)])
