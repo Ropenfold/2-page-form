@@ -1,0 +1,24 @@
+.backgroundContainer {
+    background-color: #00008B;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer{
+    width: 70%;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .formContainer{
+        width:100%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .formContainer{
+        width: 50%;
+    }
+  }
